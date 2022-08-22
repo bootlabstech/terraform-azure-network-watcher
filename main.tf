@@ -29,7 +29,7 @@ resource "azurerm_log_analytics_workspace" "log_analytics" {
 }
 
 resource "azurerm_network_watcher_flow_log" "flow_log" {
-  network_watcher_name = azurerm_network_watcher.nw_name.name
+  network_watcher_name = azurerm_network_watcher.nw.name
   resource_group_name  = var.resource_group_name
   name                 = var.flow_log_name
 
