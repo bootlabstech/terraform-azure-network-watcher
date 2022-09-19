@@ -50,3 +50,4 @@ resource "azurerm_network_watcher_flow_log" "flow_log" {
     interval_in_minutes   = 10
   }
 }
+
